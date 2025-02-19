@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Zone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .glitch {
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ffff; }
+            50% { text-shadow: -2px -2px 0 #ff0000, 2px 2px 0 #00ffff; }
+            100% { text-shadow: 2px -2px 0 #ff0000, -2px 2px 0 #00ffff; }
+        }
+        .flag {
+            font-size: 20px;
+            background: rgba(0, 255, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .hint {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch">Ugh. Hello Visitor,</div>
+    <p>I'm busy being put into my crib right now, but I'm sure you want something of mine.</p>
+    <div class="flag">Here is the flag: <strong>tacops{H3110_V1s1t0r$}</strong></div>
+    <p class="hint">Perhaps what you are looking for next lies within where this website is hosted.</p>
+</body>
+</html>
